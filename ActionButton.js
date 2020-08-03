@@ -95,10 +95,7 @@ const ActionButton = props => {
     };
 
     const wrapperStyle = {
-      backgroundColor: anim.current.interpolate({
-        inputRange: [0, 1],
-        outputRange: [props.buttonColor, props.btnOutRange || props.buttonColor]
-      }),
+
       width: props.size,
       height: props.size,
       borderRadius: props.size / 2
@@ -285,7 +282,7 @@ const ActionButton = props => {
         style={[
           getOverlayStyles(),
           {
-            backgroundColor: props.bgColor,
+
             opacity: anim.current.interpolate({
               inputRange: [0, 1],
               outputRange: [0, props.bgOpacity]
@@ -398,13 +395,13 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    top: 0,
-    // backgroundColor: "transparent"
+    top: 0
+
   },
   btnText: {
     marginTop: -4,
-    fontSize: 24,
-    // backgroundColor: "transparent"
+    fontSize: 24
+
   }
 });
 export default ActionButton;
