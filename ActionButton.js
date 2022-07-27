@@ -16,6 +16,7 @@ import {
   touchableBackground,
   DEFAULT_ACTIVE_OPACITY
 } from "./shared";
+import {TextPropTypes} from 'deprecated-react-native-prop-types';
 
 const ActionButton = props => {
   const [, setResetToken] = useState(props.resetToken);
@@ -332,7 +333,7 @@ ActionButton.propTypes = {
   bgColor: PropTypes.string,
   bgOpacity: PropTypes.number,
   buttonColor: PropTypes.string,
-  buttonTextStyle: Text.propTypes.style,
+  buttonTextStyle: TextPropTypes.style,
   buttonText: PropTypes.string,
 
   offsetX: PropTypes.number,
